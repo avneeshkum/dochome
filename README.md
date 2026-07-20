@@ -94,7 +94,7 @@ dochome/
 
 ### 1. Clone & Install
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/avneeshkum/dochome.git
 cd dochome
 yarn install
 ```
