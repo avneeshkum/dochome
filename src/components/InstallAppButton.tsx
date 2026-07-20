@@ -29,7 +29,7 @@ export default function InstallAppButton() {
 
   async function handleInstall() {
     if (!isIOS && window.deferredPrompt) {
-      console.log('🚀 Triggering install prompt...')
+      console.log('Triggering install prompt...')
       window.deferredPrompt.prompt()
       const { outcome } = await window.deferredPrompt.userChoice
       console.log('User choice:', outcome)
@@ -42,7 +42,7 @@ export default function InstallAppButton() {
     } else if (isIOS) {
       setShowIOSModal(true)
     } else {
-      console.warn('⚠️ Install prompt not available. Try hard refresh.')
+      console.warn('Install prompt not available. Try hard refresh.')
     }
   }
 
